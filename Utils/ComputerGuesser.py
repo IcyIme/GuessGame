@@ -7,13 +7,13 @@ class ComputerGuesser:
         self.__settings: GuesserSettings.range = settings
 
     def computerGuess(self) -> int:
-        range_from, range_to = self.__settings.range
-        return random.randint(range_from, range_to)
+        rangeTo, rangeFrom = self.__settings.range
+        return random.randint(rangeFrom, rangeTo)
 
     def __repr__(self):
-        range_from, range_to = self.__settings.range
-        return f"ComputerGuesser(computer_name='{self.__computer_name}', rangeFrom={range_from}, rangeTo={range_to})"
+        rangeFrom, rangeTo = self.__settings.range
+        return f"ComputerGuesser(computer_name='{self.__computer_name}', rangeFrom={rangeFrom}, rangeTo={rangeTo})"
 
     def __str__(self):
         range_from, range_to = self.__settings.range
-        return f"Computer Guesser '{self.__computer_name}' with range [{range_from} - {range_to}]"
+        return f"Computer Guesser '{self.__computerName}' with range [{self.rangeFrom} - {self.rangeTo}]"

@@ -1,6 +1,6 @@
 class Menu():
     def __init__(self, menuList: list[str]):
-        self.__menuList: list[str] = [f"{i + 1} {item}" for i, item in enumerate(menuList)]
+        self.__menuList: list[str] = [f"[{i + 1}] {item}" for i, item in enumerate(menuList)]
 
     @property
     def lenOfmenuList(self) -> int:
